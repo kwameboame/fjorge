@@ -8,3 +8,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/************************
+	* Custom CSS
+*************************/
+.bb-icon svg path{
+	fill:#d6d6d6;
+}
+
+@media (max-width: 640px) {
+.bb-icon svg path{
+	fill:#EE7623 !important;
+}
+}
