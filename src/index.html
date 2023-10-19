@@ -10,49 +10,71 @@
     <meta name="keywords" content="web design, bespoke web development, wordpress development, digital agency" />
     <meta content="fjorge" name="author" />
 
-
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <!-- Tailwind CSS styles-->
     <link rel="stylesheet" href="../dist/tailwind.css" type="text/css" />
-
 </head>
 
 <body>
-
-    <!-- NAVBAR -->
-    <nav>
-        <div>
-            <!-- LOGO -->
-            <a>
-                <img src="images/logo.png">
-            </a>
-
-            <!-- MOBILE MENU TOGGLE -->
-            <button>
-                <span></span>
-            </button>
-
-            <div>
-                <ul>
-                    <li>
-                        <a href="#home">Work</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    </li>
-                </ul>
+    <!-- Header styles-->
+    <header>
+        <!-- Navigation Menu Items-->
+        <div class="absolute z-50 w-full pt-6 px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-5xl">
+                <nav class="flex justify-between">
+                    <div class="flex px-2 sm:px-6 lg:px-8">
+                        <!-- Mobile menu button-->
+                        <div class="absolute inset-y-0 left-0 sm:hidden">
+                            <button type="button" 
+                                class="mobile-menu-button relative inline-flex items-center justify-center rounded-md p-2 
+                                text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 
+                                focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                                <!-- Icon when menu is closed (initially displayed) -->
+                                <svg class="block h-6 w-6 menu-closed" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                                <!-- Icon when menu is open (initially hidden) -->
+                                <svg class="hidden h-6 w-6 menu-open" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!--Logo/brand-->
+                        <div class="flex items-center sm:items-stretch sm:justify-start">
+                            <div class="flex flex-shrink-0 items-center justify-start">
+                                <a aria-label="Home" href="/">
+                                    <img class="h-full w-auto" src="images/logo.png" alt="Fjorge logo">
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <!--Menu for large screens. Gets hidden on mobile devices-->
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                        <a href="#" class="text-slate-100 hover:text-white hover:font-bold px-3 py-2 text-sm font-medium">Work</a>
+                        <a href="#" class="text-slate-100 hover:text-white hover:font-bold px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#" class="text-slate-100 hover:text-white hover:font-bold px-3 py-2 text-sm font-medium">Blog</a>
+                        <a href="#" class="text-slate-100 hover:text-white hover:font-bold px-3 py-2 text-sm font-medium">Contact</a>
+                        </div>
+                    </div>
+                
+                    <!-- Mobile menu, show/hide based screen size-->
+                    <div class="absolute hidden bg-gray-800 w-full left-0" id="mobile-menu">
+                    <div class="space-y-1 px-2 pb-3 pt-2">
+                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Work</a>
+                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
+                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Blog</a>
+                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+                    </div>
+                    </div>
+                </nav>      
+        <!-- END NAVBAR -->
             </div>
         </div>
-    </nav>
-    <!-- END NAVBAR -->
+    </header>
+    <!-- END HEADER -->
 
     <!-- HERO SLIDER -->
     <section >
