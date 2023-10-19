@@ -1,0 +1,10 @@
+/**************************
+	* STYLES
+**************************/
+
+/**************************
+	* Load Tailwind Styles
+***************************/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
