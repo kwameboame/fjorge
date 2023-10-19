@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <!-- Tailwind CSS styles-->
     <link rel="stylesheet" href="../dist/tailwind.css" type="text/css" />
+    <!-- Carousel CSS styles-->
+    <link rel="stylesheet" href="css/carousel/carousel.css" type="text/css" />
 </head>
 
 <body>
@@ -24,7 +26,7 @@
             <div class="mx-auto max-w-5xl">
                 <nav class="flex justify-between">
                     <div class="flex px-2 sm:px-6 lg:px-8">
-                        
+
                         <!-- Mobile menu button-->
                         <div class="absolute inset-y-0 left-0 sm:hidden">
                             <button type="button" 
@@ -81,22 +83,66 @@
     <!-- END HEADER -->
 
     <!-- HERO SLIDER -->
-    <section >
-        <div>
-            <img src="images/slides/slide-1.png" class="d-block w-100" alt="...">
-            <div>
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+    <section class="slideshow">
+        <div class="slideshow-inner">
+          <div class="slides">
+            <div class="slide is-active ">
+              <div class="slide-content">
+                <div class="caption">
+                  <div class="title">Slide title 1</div>
+                  <div class="text">
+                    <p>Slide description 1</p>
+                  </div> 
+                  <a href="#" class="btn">
+                    <span class="btn-inner">Learn More</span>
+                  </a>
+                </div>
+              </div>
+              <div class="image-container"> 
+                <img src="images/slides/slide-1.png" alt="man writing on a board" class="image" />
+              </div>
             </div>
-        </div>
-        <div>
-            <img src="images/slides/slide-2.png" class="d-block w-100" alt="...">
-            <div>
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+            <div class="slide">
+              <div class="slide-content">
+                <div class="caption">
+                  <div class="title">Slide title 2</div>
+                  <div class="text">
+                    <p>Slide description 2</p>
+                  </div> 
+                  <a href="#" class="btn">
+                    <span class="btn-inner">Learn More</span>
+                  </a>
+                </div>
+              </div>
+              <div class="image-container">
+                <img src="images/slides/slide-2.png" alt="bored dog" class="image" />
+              </div>
             </div>
-        </div>
-    </section>
+          </div>
+          <div class="pagination">
+            <div class="item is-active"> 
+              <span class="icon">1</span>
+            </div>
+            <div class="item">
+              <span class="icon">2</span>
+            </div>
+          </div>
+          <div class="arrows">
+            <div class="arrow prev">
+              <span class="svg svg-arrow-left">
+                <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+                <span class="alt sr-only"></span>
+              </span>
+            </div>
+            <div class="arrow next">
+              <span class="svg svg-arrow-right">
+                <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+                <span class="alt sr-only"></span>
+              </span>
+            </div>
+          </div>
+        </div> 
+      </section>
 
 
     <!-- WELCOME START -->
@@ -182,6 +228,14 @@
     <!-- JS -->
     <!--Load iconify to handle material design icons-->
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+    <!--Load jQuery for hero slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--load Tweenmax for hero slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--load Carousel-->
+    <script src="js/carousel/carousel.js"></script>
+    
     <!--load custom JS-->
     <script src="js/script.js"></script>
 
