@@ -14,19 +14,19 @@
 ***************************/
 @font-face {
 	font-family: 'Rift-Regular';
-	src: url('../src/fonts/Rift/Fort\ Foundry\ -\ Rift-Regular.otf') format('opentype');
+	src: url('../fonts/Rift/Fort\ Foundry\ -\ Rift-Regular.otf') format('opentype');
 }
 @font-face {
 	font-family: 'Rift-Medium';
-	src: url('../src/fonts/Rift/Fort\ Foundry\ -\ Rift-Medium.otf') format('opentype');
+	src: url('../fonts/Rift/Fort\ Foundry\ -\ Rift-Medium.otf') format('opentype');
 }
 @font-face {
 	font-family: 'Rift-Light';
-	src: url('../src/fonts/Rift/Fort\ Foundry\ -\ Rift-Light.otf') format('opentype');
+	src: url('../fonts/Rift/Fort\ Foundry\ -\ Rift-Light.otf') format('opentype');
 }
 @font-face {
 	font-family: 'Rift-Bold';
-	src: url('../src/fonts/Rift/Fort\ Foundry\ -\ Rift-Bold.otf') format('opentype');
+	src: url('../fonts/Rift/Fort\ Foundry\ -\ Rift-Bold.otf') format('opentype');
 }
 
 .rift-regular {
