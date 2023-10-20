@@ -9,16 +9,55 @@
 @tailwind components;
 @tailwind utilities;
 
+/**************************
+	* Load fonts
+***************************/
+@font-face {
+	font-family: 'Rift-Regular';
+	src: url('../src/fonts/Rift/Fort\ Foundry\ -\ Rift-Regular.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Rift-Medium';
+	src: url('../src/fonts/Rift/Fort\ Foundry\ -\ Rift-Medium.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Rift-Light';
+	src: url('../src/fonts/Rift/Fort\ Foundry\ -\ Rift-Light.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Rift-Bold';
+	src: url('../src/fonts/Rift/Fort\ Foundry\ -\ Rift-Bold.otf') format('opentype');
+}
 
-/************************
-	* Custom CSS
-*************************/
+.rift-regular {
+	font-family: 'Rift-Regular', sans-serif;
+}
+.rift-medium {
+	font-family: 'Rift-Medium', sans-serif;
+}
+.rift-light {
+	font-family: 'Rift-Light', sans-serif;
+}
+
+.rift-bold {
+	font-family: 'Rift-Bold', sans-serif;
+}
+
+/**************************
+	* iconify SVG styles
+****************************/
 .bb-icon svg path{
 	fill:#d6d6d6;
 }
-
 @media (max-width: 640px) {
 .bb-icon svg path{
 	fill:#EE7623 !important;
 }
+}
+
+/***************************
+	* Benefits area styles
+*****************************/
+.benefits div div img{
+	max-height: 72px;
 }
