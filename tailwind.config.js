@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        'cust-footer-bg': '#014152', 
+        'cust-darkblue-bg': '#014152', 
         'cust-darkerblue': '#003E52', 
       },
       textColor: {

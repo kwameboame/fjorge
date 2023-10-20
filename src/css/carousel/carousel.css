@@ -187,3 +187,13 @@
     fill: #fff;
     transition: left 0.2s ease;
 }
+
+
+@media (max-width: 640px) {
+.slideshow .slide .caption {
+    padding: 0 100px !important;
+}
+.slideshow .arrows .prev {
+    right: 21% !important;
+}
+}
