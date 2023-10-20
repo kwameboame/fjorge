@@ -1,7 +1,3 @@
-// Is script loaded?
-console.log('script file is connected');
-
-
 // SCRIPT FOR MOBILE MENU TOGGLE
 // Get HTML Elements
 const btn = document.querySelector("button.mobile-menu-button");

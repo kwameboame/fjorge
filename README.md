@@ -11,6 +11,7 @@ The project has been deployed on both Netlify at [https://fjorge-sosthenes.netli
 - (Material design icon) [Iconify](https://icon-sets.iconify.design/mdi/)
 
 ## Possible Improvements
+- Fix slider caption transitions
 - Add smooth transitions to the mobile menu.
 - Reconsider hero/slider area styling on mobile.
 - Replace Iconify with raw SVG since it is used for just 1 icon (reduce extra dependency calling).
