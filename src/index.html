@@ -22,25 +22,24 @@
     <!-- Header styles-->
     <header>
         <!-- Navigation Menu Items-->
-        <div class="absolute z-50 w-full pt-6 px-4 sm:px-6 lg:px-8">
+        <div class="absolute z-50 w-full pt-3 pb-3 px-4 sm:px-6 lg:px-8 lg:pt-6 bg-cust-darkblue md:bg-transparent lg:bg-transparent">
             <div class="mx-auto max-w-5xl">
                 <nav class="flex justify-between">
                     <div class="flex px-2 sm:px-6 lg:px-8">
 
                         <!-- Mobile menu button-->
-                        <div class="absolute inset-y-0 left-0 sm:hidden">
+                        <div class="absolute inset-y-0 right-1 top-1.5 sm:hidden">
                             <button type="button" 
                                 class="mobile-menu-button relative inline-flex items-center justify-center rounded-md p-2 
-                                text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 
-                                focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                                text-gray-400 hover:text-white focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
                                 <!--text for screen recorders; for accessibility-->
                                 <span class="sr-only">Open main menu</span>
                                 <!-- Icon when menu is closed (initially displayed) -->
-                                <svg class="block h-6 w-6 menu-closed" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <svg class="block h-12 w-12 menu-closed" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                                 </svg>
                                 <!-- Icon when menu is open (initially hidden) -->
-                                <svg class="hidden h-6 w-6 menu-open" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <svg class="hidden h-12 w-12 menu-open" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
                             </button>
@@ -59,22 +58,23 @@
                     <!--Menu for large screens. Gets hidden on mobile devices-->
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
-                        <a href="#" class="text-slate-100 hover:text-white hover:font-bold px-3 py-2 text-sm font-medium">Work</a>
-                        <a href="#" class="text-slate-100 hover:text-white hover:font-bold px-3 py-2 text-sm font-medium">About</a>
-                        <a href="#" class="text-slate-100 hover:text-white hover:font-bold px-3 py-2 text-sm font-medium">Blog</a>
-                        <a href="#" class="text-slate-100 hover:text-white hover:font-bold px-3 py-2 text-sm font-medium">Contact</a>
+                        <a href="#" class="text-slate-100 hover:text-white hover:font-bold transition duration-700 px-3 py-2 text-sm font-medium">Work</a>
+                        <a href="#" class="text-slate-100 hover:text-white hover:font-bold transition duration-700 px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#" class="text-slate-100 hover:text-white hover:font-bold transition duration-700 px-3 py-2 text-sm font-medium">Blog</a>
+                        <a href="#" class="text-slate-100 hover:text-white hover:font-bold transition duration-700 px-3 py-2 text-sm font-medium">Contact</a>
                         </div>
                     </div>
                 
                     <!-- Mobile menu, show/hide based screen size-->
-                    <div class="absolute hidden bg-gray-800 w-full left-0" id="mobile-menu">
-                    <div class="space-y-1 px-2 pb-3 pt-2">
-                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Work</a>
-                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
-                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Blog</a>
-                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+                    <div class="absolute hidden bg-cust-darkblue left-0 mt-12 h-screen w-full" id="mobile-menu">
+                        <div class="flex flex-col items-center justify-center px-2 pb-3 pt-2 h-full">
+                            <a href="#" class="text-gray-300 hover:text-white block rounded-md px-3 py-3 text-3xl font-normal">Work</a>
+                            <a href="#" class="text-gray-300 hover:text-white block rounded-md px-3 py-3 text-3xl font-normal">About</a>
+                            <a href="#" class="text-gray-300 hover:text-white block rounded-md px-3 py-3 text-3xl font-normal">Blog</a>
+                            <a href="#" class="text-gray-300 hover:text-white block rounded-md px-3 py-3 text-3xl font-normal">Contact</a>
+                        </div>
                     </div>
-                    </div>
+                      
                 </nav>      
         <!-- END NAVBAR -->
             </div>
